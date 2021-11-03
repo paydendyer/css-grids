@@ -9,6 +9,9 @@ body {
 li {
   font-size: 20px;
 }
+li a {
+  color: orange;
+}
 .photo-grid {
   display: grid;
   width: 100%;
@@ -27,11 +30,12 @@ li {
 }
 .title {
   text-align: center;
-}
-h1 {
-  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  height: 150px;
 }
 .logo {
   float: left;
-  width: 125px;
+  width: 220px;
+  padding: 0;
 }
