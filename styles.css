@@ -7,7 +7,7 @@ body {
   padding: 2em;
 }
 li {
-  padding: 10px;
+  font-size: 20px;
 }
 .photo-grid {
   display: grid;
@@ -29,5 +29,9 @@ li {
   text-align: center;
 }
 h1 {
-  padding-top: 10px;
+  padding: 10px;
+}
+.logo {
+  float: left;
+  width: 125px;
 }
