@@ -11,8 +11,8 @@ li {
   padding: 5vh;
 }
 li a {
-  color: orange;
-  border: 2px solid black;
+  color:#1565C0;
+  border: 2px solid orange;
   text-align: center;
   font-family: "Arial Rounded MT Bold", "Helvetica Rounded", Arial, sans-serif; 
 }
@@ -47,4 +47,7 @@ li a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.col-10 {
+  max-height: 600px;
 }
