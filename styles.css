@@ -28,10 +28,6 @@ li a {
   width: 500px;
   height: 500px;
   object-fit: cover;
-  opacity: 1;
-    display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
   }
 
 .vertical {
@@ -59,15 +55,6 @@ footer {
 
 }
 
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
-}
-
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -79,17 +66,23 @@ footer {
   text-align: center;
 }
 
-.container:hover .image {
+.col-md-5:hover .image{
   opacity: 0.3;
 }
 
-.container:hover .middle {
+.col-md-5:hover .middle {
   opacity: 1;
 }
 
 .text {
-  background-color: #04AA6D;
-  color: white;
+  background-color: white;
+  color: black;
   font-size: 16px;
   padding: 16px 32px;
+}
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
