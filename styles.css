@@ -24,11 +24,7 @@ li a {
   grid-gap: 5px;
   justify-content: center;
 }
-.container img {
-  width: 450px;
-  height: 450px;
-  object-fit: cover;
-  }
+
 
 .vertical {
   grid-row: span 3;
@@ -85,4 +81,36 @@ footer {
   display: block;
   transition: .5s ease;
   backface-visibility: hidden;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    }
+.image-portfolio {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin: 0 0px 0 0;
+  transition: 1s ease-in;
+  -webkit-transition: width 1s ease-in;
+  -moz-transition: width 1s ease-in;
+  -o-transition: width 1s ease-in;
+}
+.image-portfolio:hover {
+  width: 100%;
+  height: 100%;
+}
+.grid {
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* .image-portfolio:hover {
+  position:relative;
+  top:-25px;
+  left:-35px;
+  width:500px;
+  height:auto;
+  display:block;
+  z-index:999;
 }

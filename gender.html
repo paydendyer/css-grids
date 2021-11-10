@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid</title>
+    <title>Gender</title>
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body> 
    
@@ -25,30 +26,42 @@
         <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
       </ul>
     </div>
-    <div class="container justify-content-center pt-2">
+    <div class="container-fluid justify-content-center pt-2">
       <div class="row pb-2">
         <div class="col-md-4">
-          <img src="images/purple.jpg">
+          <img src="images/purple.jpg" class="image-portfolio img-responsive">
         </div>
         <div class="col-md-4">
-          <img src="images/headless.jpg" alt="headless">
+          <img src="images/headless.jpg" alt="headless" class="image-portfolio img-responsive">
         </div>
         <div class="col-md-4">
-          <img src="images/streetlight.jpg" alt="street light">
+          <img src="images/streetlight.jpg" alt="street light" class="image-portfolio img-responsive">
         </div>
       </div>
       <div class="row pb-1">
         <div class="col-md-4">
-          <img src="images/hands.jpeg">
+          <img src="images/hands.jpeg" class="image-portfolio img-responsive">
         </div>
         <div class="col-md-4">
-          <img src="images/smokehead.jpg" alt="smoke head">
+          <img src="images/smokehead.jpg" alt="smoke head" class="image-portfolio img-responsive">
         </div>
         <div class="col-md-4">
-          <img src="images/clouds2.jpg" alt="clouds">
+          <img src="images/clouds2.jpg" alt="clouds" class="image-portfolio img-responsive">
         </div>
 
       </div>
     </div>
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img class="img-responsive" src="" />
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
     </body>
     </html>
