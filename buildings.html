@@ -20,6 +20,15 @@
     </div>
      <ul class="nav flex-column">
         <li class="nav-item"><a class="nav-link" href="home.html"> Home</a></li>
+        <li class="dropdown-btn nav-item"><a class="nav-link current">Portfolio</a><i class="fa fa-caret-down"></i>
+        
+        </li>
+        <div class="dropdown-container-active">
+ <a class="dropdown-content" href="gender.html">Gender</a><br>
+          <a class="dropdown-content" href="portraits.html">Portraits</a><br>
+          <a class="dropdown-content" href="city.html">City Lights</a><br>
+          <a class="dropdown-content-sublink" href="buildings.html">Buildings</a><br>
+        </div>
         <li class="nav-item"><a class="nav-link" href="about.html"> About</a></li>
         <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
       </ul>
@@ -49,5 +58,22 @@
 
       </div>
     </div>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+      
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+        } else {
+        dropdownContent.style.display = "block";
+        }
+        });
+      }
+      </script>
     </body>
     </html>

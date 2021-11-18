@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payden Dyer Photography | About</title>
+    <title>Payden Dyer Photography</title>
 
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/bootstrap.css" />
@@ -20,20 +20,54 @@
     </div>
      <ul class="nav flex-column">
         <li class="nav-item"><a class="nav-link" href="home.html"> Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html"> About</a></li>
+        <li class="dropdown-btn nav-item"><a class="nav-link">Portfolio</a><i class="fa fa-caret-down"></i>
+        
+        </li>
+        <div class="dropdown-container">
+ <a class="dropdown-content" href="gender.html">Gender</a><br>
+          <a class="dropdown-content" href="portraits.html">Portraits</a><br>
+          <a class="dropdown-content" href="city.html">City Lights</a><br>
+          <a class="dropdown-content" href="buildings.html">Buildings</a><br>
+        </div>
+        <li class="nav-item"><a class="nav-link current" href="about.html"> About</a></li>
         <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
       </ul>
     </div>
-    <div class="container">
-      <h2> About</h2>
-      <div class="row align-items-start">
-        <div class="col pt-5">
-          <img src="images/about.jpg" alt="portrait of payden" height="500px">
-        </div>
+    <div class="container about">
+      <h2 class="about pt-3"> About</h2>
+      <div class="row">
         <div class="col">
-          2 of three columns
+          <img src="images/about.jpg" alt="portrait of payden" height="500px" class="me">
         </div>
-        <div class="col">
-          3 of three columns
+         <div class="col">
         </div>
+        <div class="col-md-6 paragraph">
+         <p>My goal with my photography is to create fine-art digital prints that are expressive and moody. I like to use vivid colors and contrasting lights that give my work a distinct style. I like to photograph things that most people would just overlook and never think could be art. 
+          </p>
+          <p>A signature aspect of my work is shooting my photography during the night time or in low-light settings, such as parking garages or vacant lots. It allows me to observe the light as the main subject of my photographs. Various projects in the past have allowed me to portray this talent of mine. I utilize lights in building windows, car headlights on busy highways, neon-illuminated signs, and city lights reflecting off the water. This gives my photographs a surreal feel and sometimes depicts isolation or loneliness.</p>
+          <p> I explore themes of gender identity, sexual orientation, and mental health in my work. Each of these topics have a strong tie to some part of my life, which sometimes can make it difficult to share with the world. I strive to use my work to show what it feels like to struggle with mental health in my own personal life. </p>
+        <p> A couple of photographers that have inspired my work are Nan Goldin and Robert Mapplethorpe. Both of their work explores queer bodies, intimacy, and relationships. </p>
+        </div>
+       
       </div>
+    </div>
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+          } else {
+          dropdownContent.style.display = "block";
+          }
+          });
+        }
+        </script>
+        
+        </body>
+        </html>

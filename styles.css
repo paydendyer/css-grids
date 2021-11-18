@@ -3,18 +3,20 @@ body {
  padding: 0;
  font-family: "Lato";
 }
+h1 {
+  color:#004AAD;
+  font-family: "Lato";
+}
+/* Navigaton */
 .nav-container {
   float: left;
   height: 1200px;
 }
 .nav-item {
   font-size: 20px;
-  padding: 5vh;
+  padding: 4vh;
 }
-h1 {
-  color:#004AAD;
-  font-family: "Lato";
-}
+
 li a {
   color:#004AAD;
   text-align: center;
@@ -26,6 +28,35 @@ li a {
   font-family: "Lato";
   font-size: 2rem;
   color: #FF914D;
+}
+.sublink {
+  color: #004AAD;
+}
+/* Creates underline on hover */
+ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #004AAD;
+  color: #004AAD;
+  bottom: -3px;
+  left: 0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.15s ease-in-out 0s;
+  transition: all 0.15s ease-in-out 0s;
+
+}
+
+ul li a.current:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.current {
+  color: #004AAD;
 }
 ul li a {
   transition: 0.5s;
@@ -46,25 +77,11 @@ ul li a:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-
-.photo-grid {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 300px 300px 300px 300px;
-  grid-template-rows: 150px 150px;
-  grid-gap: 5px;
-  justify-content: center;
-}
-
-
-.vertical {
-  grid-row: span 3;
-}
-.title {
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-  height: 150px;
+/* Logo & Social Icons */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+  font-size: 5px;
 }
 .logo {
   width: 300px;
@@ -76,7 +93,13 @@ ul li a:hover::after {
   align-items: center;
   font-size: 20px;
 }
-
+.fa {
+  color: #004AAD;
+}
+i {
+  vertical-align: middle;
+}
+/* Home Page Grid */
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -101,6 +124,7 @@ ul li a:hover::after {
   color: black;
   font-size: 16px;
   padding: 16px 32px;
+  font-family: "Lato";
 }
 .image {
   opacity: 1;
@@ -111,6 +135,7 @@ ul li a:hover::after {
   height: 450px;
   object-fit: cover;
   }
+/* Portfolio Pages */
 .image-portfolio {
   width: 400px;
   height: 400px;
@@ -122,16 +147,13 @@ ul li a:hover::after {
   width: 100%;
   max-height: 500px;
 }
-.grid {
-  margin: 1em auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-.fa {
-  color: #004AAD;
-}
+/* Dropdown Nav */
 .dropdown-container {
   display: none;
+  text-align: center;
+}
+.dropdown-container-active {
+  display: block;
   text-align: center;
 }
 .dropdown-content {
@@ -140,11 +162,24 @@ ul li a:hover::after {
   text-align: center;
   font-family: "Lato";
 }
+.dropdown-content-sublink {
+  font-size: 20px;
+  text-align: center;
+  font-family: "Lato";
+  color: #004AAD;
+}
 .dropdown-content:hover {
   color: #004AAD;
 }
-.fa-caret-down {
-  float: right;
-  padding-right: 8px;
-  font-size: 5px;
+/* About Page */
+p {
+  font-family: "Lato";
 }
+.about {
+  height: 100px;
+}
+.me {
+  display: inline-block;
+}
+
+
