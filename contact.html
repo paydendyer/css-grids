@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payden Dyer Photography</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body> 
+   
+  <div class="nav-container">
+    <div class="logo">
+    <img src="images/logo.jpg" alt="logo" class="logo"></div>
+    <div class="social">
+    <a target="_blank" href="https://linkedin.com/in/paydendyer" class="fa fa-linkedin" aria-hidden="true"></a>
+    <a target="_blank" href="https://instagram.com/paydendyer"class="fa fa-instagram pl-2" aria-hidden="true"></a>
+    </div>
+     <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="index.html"> Home</a></li>
+        <li class="dropdown-btn nav-item"><a class="nav-link current">Portfolio</a><i class="fa fa-caret-down"></i>
+        
+        </li>
+        <div class="dropdown-container-active">
+ <a class="dropdown-content-sublink" href="gender.html">Gender</a><br>
+          <a class="dropdown-content" href="portraits.html">Portraits</a><br>
+          <a class="dropdown-content" href="city.html">City Lights</a><br>
+          <a class="dropdown-content" href="buildings.html">Buildings</a><br>
+        </div>
+        <li class="nav-item"><a class="nav-link" href="about.html"> About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"> Contact</a></li>
+      </ul>
+    </div> 
+   <div class="header"></div>
+<div class="container contact-container">
+
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xqkwrwyo" method="post">
+      <fieldset id="fs-frm-inputs">
+        <label for="full-name">Full Name</label>
+        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+        <label for="email-address">Email Address</label>
+        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.com" required="">
+        <label for="message">Message</label>
+        <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+      </fieldset>
+      <input type="submit" value="Submit">
+    </form>
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
+</body>
+</html>
