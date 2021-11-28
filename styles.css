@@ -10,11 +10,11 @@ h1, h2 {
 /* Navigaton */
 .nav-container {
   float: left;
-  height: 1200px;
+  height: 1000px;
 }
 .nav-item {
   font-size: 20px;
-  padding: 4vh;
+  padding: 2vh;
 }
 
 li a {
@@ -215,5 +215,11 @@ input[type=submit]:hover {
   background-color: #FF914D;
   opacity: 90%;
 }
-
-/* Add a background color and some padding around the form */
+footer {
+  text-align: center;
+  font-family: "Lato";
+  font-size: 14px;
+}
+img {
+  max-width: 100%;
+}
