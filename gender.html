@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="styles/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
   </head>
   <body> 
    
@@ -34,38 +36,71 @@
       </ul>
       <footer class="pt-5"> 2021 &copy; Payden Dyer </footer>
     </div>
-    <div class="container-fluid justify-content-center pt-3">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="images/gender/blurry.jpg" class="image-portfolio img-responsive">
+    <div class="container-fluid pt-3">
+      <div class="row" data-masonry='{"percentPosition": true }'>
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/blurry.jpg" class="image-portfolio img-responsive myImg">
+          <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
         </div>
-        <div class="col-md-4">
-          <img src="images/gender/headless.jpg" alt="headless" class="image-portfolio img-responsive">
         </div>
-        <div class="col-md-4">
-          <img src="images/gender/clouds2.jpg" alt="clouds" class="image-portfolio img-responsive">
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/headless.jpg" alt="headless" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img02">
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="images/gender/hands.jpeg" class="image-portfolio img-responsive">
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/clouds2.jpg" alt="clouds" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img03">
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="images/gender/smokehead.jpg" alt="smoke head" class="image-portfolio img-responsive">
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/hands.jpeg" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img04">
+          </div>
         </div>
-       <div class="col-md-4">
-          <img src="images/gender/streetlight.jpg" alt="street light" class="image-portfolio img-responsive">
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/smokehead.jpg" alt="smoke head" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img05">
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="images/gender/me.jpg" class="image-portfolio img-responsive">
+       <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/streetlight.jpg" alt="street light" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img06">
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="images/gender/blue.jpg" alt="smoke head" class="image-portfolio img-responsive">
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/me.jpg" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img07">
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="images/gender/mirror.jpg" alt="clouds" class="image-portfolio img-responsive">
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/blue.jpg" alt="smoke head" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img08">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 pb-2">
+          <img src="images/gender/mirror.jpg" alt="clouds" class="image-portfolio img-responsive myImg">
+          <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img09">
+          </div>
         </div>
       </div>
     </div>
@@ -86,5 +121,26 @@
         });
       }
       </script>
+        <script>
+          // Get the modal
+          var modal = document.getElementById('myModal');
+      
+          // Get the image and insert it inside the modal - use its "alt" text as a caption
+          var img = $('.myImg');
+          var modalImg = $("#img01");
+          $('.myImg').click(function () {
+            modal.style.display = "block";
+            var newSrc = this.src;
+            modalImg.attr('src', newSrc);
+          });
+      
+          // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+      
+          // When the user clicks on <span> (x), close the modal
+          span.onclick = function () {
+            modal.style.display = "none";
+          }
+        </script>
     </body>
     </html>
