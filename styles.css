@@ -107,7 +107,7 @@ i {
 }
 
 .col-md-6:hover .image{
-  opacity: 0.3;
+  opacity: 0.6;
 }
 
 .col-md-6:hover .middle {
@@ -115,9 +115,8 @@ i {
 }
 
 .text {
-  background-color: white;
-  color: black;
-  font-size: 16px;
+  color: #004AAD;
+  font-size: 2rem;
   padding: 16px 32px;
   font-family: "Lato";
 }
