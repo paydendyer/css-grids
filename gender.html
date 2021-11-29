@@ -111,11 +111,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script> // init Masonry after all images have loaded
-      var $grid = $('.grid').imagesLoaded( function() {
+      var $grid = $('.container-fluid').imagesLoaded( function() {
         $grid.masonry({
-          itemSelector: '.grid-item',
+          itemSelector: '.row',
           percentPosition: true,
-          columnWidth: '.grid-sizer'
+          columnWidth: '.col-md-4'
         }); 
       });
       </script>
