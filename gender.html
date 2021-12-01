@@ -110,10 +110,10 @@
     <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
     <script> // init Masonry after all images have loaded
       var $container = $('.container-fluid').imagesLoaded( function() {
+        $container.show();
         $container.masonry({
           itemSelector: '.myImg',
-          percentPosition: true,
-          columnWidth: 400
+          percentPosition: true
         }); 
       });
       </script>
@@ -155,5 +155,6 @@
             modal.style.display = "none";
           }
         </script>
+        
     </body>
     </html>
