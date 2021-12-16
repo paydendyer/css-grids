@@ -80,8 +80,7 @@ body {
  /* Logo & Social Icons */
  .logo {
    width: 300px;
-   padding: 0;
-   justify-content: center;
+   position: sticky;
  }
  .social {
    display: flex;
@@ -335,8 +334,13 @@ body {
   width: 85%;
   float: left;
 }
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 800px){
   .nav-container {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 1200px){
+  .nav-link {
+    font-size: 1rem;
   }
 }
