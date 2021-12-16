@@ -212,9 +212,10 @@ body {
    opacity: 90%;
  }
  footer {
-   text-align: center;
    font-family: "Lato";
    font-size: 14px;
+   position:absolute;
+   bottom:0;
  }
  img {
    max-width: 100%;
@@ -343,10 +344,4 @@ body {
   .nav-link {
     font-size: 1.2rem;
   }
-}
-.img-responsive-height
-{
-  display: block;
-  width: auto;
-  max-height: 100%
 }
