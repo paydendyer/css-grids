@@ -344,3 +344,9 @@ body {
     font-size: 1.2rem;
   }
 }
+.img-responsive-height
+{
+  display: block;
+  width: auto;
+  max-height: 100%
+}
