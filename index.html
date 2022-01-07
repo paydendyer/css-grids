@@ -11,7 +11,7 @@
   </head>
   <body> 
    
-  <div class="nav-container">
+  <div class="nav-container" id="myTopnav">
     <img src="images/logo.jpg" alt="logo" class="logo">
     
      <ul class="nav flex-column">
@@ -31,8 +31,9 @@
       <div class="social">
     <a target="_blank" href="https://linkedin.com/in/paydendyer" class="fa fa-linkedin" aria-hidden="true"></a>
     <a target="_blank" href="https://instagram.com/paydendyer"class="fa fa-instagram pl-2" aria-hidden="true"></a>
+    
     </div>
-      
+      <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
     <div class="container-home pt-3">
       <div class="row pb-3">
@@ -83,7 +84,16 @@
         });
       }
       </script>
-
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "nav-container") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav-container";
+    }
+  }
+  </script>
       
   
     </body>

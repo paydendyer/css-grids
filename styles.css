@@ -339,16 +339,45 @@ body {
 @media only screen and (max-width: 800px){
   .nav-container {
     width: 300px;
-    display: inline;
   }
 }
 @media only screen and (max-width: 1200px){
   .nav-link {
-    font-size: 1.2rem;
     width: 100%;
     float: none;
   }
-  .nav-item {
-    padding: 1vh;
+}
+.nav-container .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 768px) {
+  .nav-container a {
+    display: none;
+    padding: 12px 25px;
+    font-size: 20px;
+    padding-bottom: 0px;
+  }
+  .nav-container a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+  .nav-container.responsive {
+    position: relative;
+    width: 100%;
+    background-color: white;
+  }
+  .nav-container.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav-container.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
   }
 }
