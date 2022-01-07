@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Lato";
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  }
  h1, h2 {
    color:#004AAD;
-   font-family: "Lato";
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  }
  .nav {
    padding-top: 15px;
@@ -23,7 +23,7 @@ body {
  li a {
    color:#004AAD;
    text-align: left;
-   font-family: "Lato";
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  }
  .nav-link {
    position: relative;
@@ -82,14 +82,13 @@ body {
  }
  /* Logo & Social Icons */
  .logo {
-  width: 200px;
-   
+  width: 200px; 
+  padding: 1vh;
  }
  .social {
    display: flex;
-   align-items: left;
    font-size: 20px;
-   padding: 1vh;
+   padding: 3vh;
  }
  .fa {
    color: #004AAD;
@@ -121,7 +120,7 @@ body {
    color: #004AAD;
    font-size: 2rem;
    padding: 16px 32px;
-   font-family: "Lato";
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  }
  .image {
    opacity: 1;
@@ -149,12 +148,12 @@ body {
  .dropdown-container {
    display: none;
    text-align: left;
-   padding-left: 10px;
+   padding: 1vh;
  }
  .dropdown-container-active {
    display: block;
    text-align: left;
-   padding-left: 10px;
+   padding: 1vh;
  }
  .dropdown-content {
    color: black;
@@ -172,7 +171,7 @@ body {
  }
  /* About Page */
  p {
-   font-family: "Lato";
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  }
  .me {
    display: inline-block;
@@ -192,12 +191,12 @@ body {
    margin-top: 6px; /* Add a top margin */
    margin-bottom: 16px; /* Bottom margin */
    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-   font-family: "Lato";
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
    color: #004AAD;
  }
  label[for=full-name], label[for=email-address], label[for=message] {
    color: #004AAD;
-   font-family: "Lato";
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  }
  
  /* Style the submit button with a specific background color etc */
@@ -216,7 +215,7 @@ body {
    opacity: 90%;
  }
  footer {
-   font-family: "Lato";
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
    font-size: 14px;
    position:absolute;
    bottom:0;
@@ -338,6 +337,7 @@ body {
 .container-home {
   width: 85%;
   float: left;
+  padding-top: 40px;
 }
 
 @media only screen and (max-width: 1200px){
@@ -361,6 +361,13 @@ body {
     float: right;
     display: block;
   }
+  .container-home {
+    padding-top: 0px;
+    width: 100%;
+  }
+  .nav {
+    padding-top: 0px;
+  }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 768px) {
@@ -381,5 +388,7 @@ body {
   }
   .nav-container {
     float: none;
+    width: 100%;
+    
   }
 }
