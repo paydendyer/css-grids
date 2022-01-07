@@ -15,19 +15,19 @@ body {
  }
  .nav-item {
    font-size: 20px;
-   padding: 2vh;
+   padding: 1vh;
  }
  li a {
    color:#004AAD;
-   text-align: center;
+   text-align: left;
    font-family: "Lato";
  }
  .nav-link {
    position: relative;
    text-decoration: none;
-   font-family: "Lato";
-   font-size: 2rem;
-   color: #FF914D;
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+   font-size: 1rem;
+   color: black;
  }
  .sublink {
    color: #004AAD;
@@ -36,8 +36,8 @@ body {
  ul li a:before {
    content: "";
    position: absolute;
-   width: 100%;
-   height: 3px;
+   width: 50%;
+   height: 2px;
    background-color: #004AAD;
    color: #004AAD;
    bottom: -3px;
@@ -64,8 +64,8 @@ body {
  ul li a::after {
    position: absolute;
    content: "";
-   width: 100%;
-   height: 3px;
+   width: 50%;
+   height: 2px;
    top: 100%;
    left: 0;
    background: #004AAD;
@@ -84,9 +84,9 @@ body {
  }
  .social {
    display: flex;
-   justify-content: center;
-   align-items: center;
+   align-items: left;
    font-size: 20px;
+   padding: 1vh;
  }
  .fa {
    color: #004AAD;
@@ -145,22 +145,23 @@ body {
  /* Dropdown Nav */
  .dropdown-container {
    display: none;
-   text-align: center;
+   text-align: left;
+   padding-left: 10px;
  }
  .dropdown-container-active {
    display: block;
-   text-align: center;
+   text-align: left;
+   padding-left: 10px;
  }
  .dropdown-content {
-   color: #FF914D;
-   font-size: 20px;
-   text-align: center;
-   font-family: "Lato";
+   color: black;
+   font-size: 1rem;
+   text-align: left;
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
  }
  .dropdown-content-sublink {
-   font-size: 20px;
-   text-align: center;
-   font-family: "Lato";
+   font-size: 1rem;
+   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
    color: #004AAD;
  }
  .dropdown-content:hover {
@@ -337,11 +338,17 @@ body {
 }
 @media only screen and (max-width: 800px){
   .nav-container {
-    width: 50%;
+    width: 300px;
+    display: inline;
   }
 }
 @media only screen and (max-width: 1200px){
   .nav-link {
     font-size: 1.2rem;
+    width: 100%;
+    float: none;
+  }
+  .nav-item {
+    padding: 1vh;
   }
 }
