@@ -354,7 +354,7 @@ body {
 @media screen and (max-width: 768px) {
   .nav-container a {
     display: none;
-    padding: 12px 25px;
+    padding: 12px 10px;
     padding-bottom: 0px;
   }
   .nav-container a.icon {
@@ -389,6 +389,15 @@ body {
   .nav-container {
     float: none;
     width: 100%;
-    
+  }
+  .logo-container {
+    float: left;
+  }
+  .social {
+    float: right;
+    padding: 0px;
+  }
+  .logo {
+    width: 80%;
   }
 }
