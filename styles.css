@@ -398,6 +398,6 @@ body {
     padding: 0px;
   }
   .logo {
-    width: 80%;
+    max-width: 80%;
   }
 }
