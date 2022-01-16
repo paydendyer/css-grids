@@ -1,7 +1,7 @@
 # CSS Grids
 By: Payden Dyer
 Website to host a photographer's portfolio
-https://paydendyer.github.io/my-resume/
+https://paydendyer.github.io/css-grids/
 ## Technology Used:
 1. HTML
 2. CSS
