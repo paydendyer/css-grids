@@ -82,8 +82,9 @@ body {
  }
  /* Logo & Social Icons */
  .logo {
-  width: 200px; 
+  font-size: 40px;
   padding: 1vh;
+  display: inline-flex;
  }
  .social {
    display: flex;
@@ -366,14 +367,11 @@ body {
     padding-top: 0px;
     width: 100%;
   }
-  .nav {
-    padding-top: 0px;
-  }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 768px) {
   .nav-container.responsive {
-    position: relative;
+    position:relative;
     width: 100%;
     background-color: white;
   }
@@ -384,7 +382,7 @@ body {
   }
   .nav-container.responsive a {
     float: none;
-    display: block;
+    display: inline;
     text-align: center;
   }
   .nav-container {
@@ -395,10 +393,9 @@ body {
     float: left;
   }
   .social {
-    float: right;
-    padding: 0px;
+    display: none;
   }
   .logo {
-    max-width: 80%;
+    width: 70%;
   }
 }
