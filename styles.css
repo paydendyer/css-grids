@@ -84,7 +84,7 @@ body {
  }
  /* Logo & Social Icons */
  .logo {
-  font-size: 40px;
+  width: 80%;
   padding: 1vh;
   display: inline-flex;
  }
@@ -179,6 +179,7 @@ body {
  .me {
    display: inline-block;
  }
+
  
  .header {
    height: 150px;
