@@ -398,4 +398,7 @@ body {
   .logo {
     width: 70%;
   }
+  .dropdown-container-active {
+    display: none;
+  }
 }
