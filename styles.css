@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +16,7 @@ body {
    float: left;
    height: 100%;
    width: 15%;
+  padding-left: 1%;
  }
  .nav-item {
    font-size: 20px;
@@ -388,6 +390,7 @@ body {
   .nav-container {
     float: none;
     width: 100%;
+    padding: 0;
   }
   .logo-container {
     float: left;
@@ -400,5 +403,9 @@ body {
   }
   .dropdown-container-active {
     display: none;
+  }
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
   }
 }
